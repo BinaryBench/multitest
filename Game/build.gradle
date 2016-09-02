@@ -1,5 +1,5 @@
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: '../Source')
+    compile "org.bukkit:bukkit:1.7.9-R0.2"
 }
 
 jar {
