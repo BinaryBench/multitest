@@ -1,12 +1,3 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-
-    }
-}
-
 allprojects {
     group 'me.binarybench'
     version '0.0.1-SNAPSHOT'
