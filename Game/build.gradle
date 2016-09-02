@@ -1,4 +1,5 @@
 dependencies {
+    compile project(':Core')
     compile "org.bukkit:bukkit:1.7.9-R0.2"
 }
 
