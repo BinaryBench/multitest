@@ -1,18 +1,11 @@
 configurations {
-    includeInJar
+    deps
 }
 
 dependencies {
-
-    //Add all jars in ../Libraries
-    compile fileTree(include: ['*.jar'], dir: '../Libraries')
-
-    // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
-    includeInJar group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1.1'
-
-    configurations.compile.extendsFrom(configurations.includeInJar)
+    deps "org.apache.commons:commons-dbcp2:2.1.1"
 }
 
 jar {
-    from configurations.includeInJar.collect { zipTree it }
+    from configurations.deps.collect { zipTree it }
 }

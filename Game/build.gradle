@@ -1,12 +1,9 @@
-configurations {
-    includeInJarGame
-}
-
 dependencies {
-    includeInJarGame project(':Core')
-    configurations.compile.extendsFrom(configurations.includeInJarGame)
+    compile project(':Core')
+    compile "org.bukkit:bukkit:1.7.9-R0.2"
 }
 
 jar {
-    from configurations.includeInJarGame.collect { zipTree it }
+    from configurations.compile.collect { zipTree it }
+    from project(':Core').configurations.compile.collect { zipTree it }
 }
