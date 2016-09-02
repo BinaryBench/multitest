@@ -5,5 +5,5 @@ dependencies {
 
 jar {
     from configurations.compile.collect { zipTree it }
-    from project(':Core').configurations.compile.collect { zipTree it }
+    exclude('org/bukkit/**')
 }
