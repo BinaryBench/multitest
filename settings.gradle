@@ -1,0 +1,5 @@
+rootProject.name = 'multitest'
+include 'Core'
+include 'Game'
+include 'Hub'
+
