@@ -3,10 +3,13 @@ configurations {
 }
 
 dependencies {
-    deps group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1.1'
+    deps "org.apache.commons:commons-dbcp2:2.1.1"
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
+
+    // configurations.compile.extendsFrom(configurations.includeInJar)
 }
 
 jar {
-    from configurations.compile.collect { zipTree it }
     from configurations.deps.collect { zipTree it }
 }
