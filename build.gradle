@@ -11,6 +11,8 @@ subprojects {
     repositories {
         mavenCentral()
         maven { url "http://repo.bukkit.org/content/groups/public/" }
+        maven { url "https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/content/" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
 
     dependencies {
