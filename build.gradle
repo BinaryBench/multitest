@@ -28,15 +28,13 @@ subprojects {
     }
 }
 
-project(':Core') {
+project(':Game') {
 
     dependencies {
         includeInJar project(':Core')
 
         configurations.compile.extendsFrom(configurations.includeInJar)
 
-        configurations.includeInJar.collect({ println 'Game-includeInJar: ' + it.getName()})
-        configurations.compile.collect({ println 'Game-compile: ' + it.getName()})
 
     }
 
