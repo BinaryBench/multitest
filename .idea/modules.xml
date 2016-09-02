@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Core/Core.iml" filepath="$PROJECT_DIR$/.idea/modules/Core/Core.iml" group="Core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Core/Core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Core/Core_main.iml" group="Core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Core/Core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Core/Core_test.iml" group="Core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Game/Game.iml" filepath="$PROJECT_DIR$/.idea/modules/Game/Game.iml" group="Game" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Game/Game_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Game/Game_main.iml" group="Game" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Game/Game_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Game/Game_test.iml" group="Game" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hub/Hub.iml" filepath="$PROJECT_DIR$/.idea/modules/Hub/Hub.iml" group="Hub" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hub/Hub_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Hub/Hub_main.iml" group="Hub" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hub/Hub_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Hub/Hub_test.iml" group="Hub" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multitest.iml" filepath="$PROJECT_DIR$/.idea/modules/multitest.iml" />
+    </modules>
+  </component>
+</project>
