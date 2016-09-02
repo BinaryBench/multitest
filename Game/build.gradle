@@ -1,8 +1,12 @@
+configurations {
+    includeInJarGame
+}
+
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: '../Source')
+    includeInJarGame project(':Core')
+    configurations.compile.extendsFrom(configurations.includeInJarGame)
 }
 
 jar {
-    from configurations.compile.collect { zipTree it }
-    from project(':Core').configurations.compile.collect { zipTree it }
+    from configurations.includeInJarGame.collect { zipTree it }
 }
