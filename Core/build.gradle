@@ -3,8 +3,6 @@ configurations {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: '../Libraries')
-
     deps group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1.1'
 }
 
