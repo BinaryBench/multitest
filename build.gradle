@@ -8,6 +8,12 @@ subprojects {
 
     sourceCompatibility = 1.8
 
+    configurations {
+        includeInJar {
+            transitive = false
+        }
+    }
+
     repositories {
         mavenCentral()
         maven { url "http://repo.bukkit.org/content/groups/public/" }
@@ -16,5 +22,7 @@ subprojects {
     dependencies {
         testCompile group: 'junit', name: 'junit', version: '4.11'
     }
-
+    jar {
+        from configurations.includeInJar.collect { zipTree it }
+    }
 }

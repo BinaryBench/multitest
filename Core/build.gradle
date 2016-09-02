@@ -1,7 +1,3 @@
-configurations {
-    includeInJar
-}
-
 dependencies {
     compile "org.apache.commons:commons-dbcp2:2.1.1"
 
@@ -9,8 +5,8 @@ dependencies {
     includeInJar group: 'com.google.guava', name: 'guava', version: '19.0'
 
     configurations.compile.extendsFrom(configurations.includeInJar)
+
+    configurations.includeInJar.collect({ println 'Core-includeInJar: ' + it.getName()})
+    configurations.compile.collect({ println 'Core-compile: ' + it.getName()})
 }
 
-jar {
-    from configurations.includeInJar.collect { zipTree it }
-}
